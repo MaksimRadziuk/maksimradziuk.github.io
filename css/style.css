@@ -1,0 +1,27 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Carrois+Gothic');
+
+html {
+	font-family: century gothic, sans-serif;
+}
+
+video{
+   position:fixed;
+   z-index:-1;
+   min-width:100%;
+   overflow:hidden;
+}
+.navbar-default {
+	background-color: transparent;
+	font-family: century gothic;
+	color: #000000;
+	font-size: 20px;
+}
+
+.navbar-right li a:hover {
+	text-decoration:underline dotted;
+}
+
+
+
+
