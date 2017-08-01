@@ -14,14 +14,176 @@ video{
 .navbar-default {
 	background-color: transparent;
 	font-family: century gothic;
-	color: #000000;
 	font-size: 20px;
+	border: none;
 }
 
-.navbar-right li a:hover {
-	text-decoration:underline dotted;
+.navbar-default .navbar-nav > li > a {
+	margin: 30px 10px;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover{
+	color: #008cbd;
+	text-decoration:underline dotted #008cbd;
+}
+
+.navbar-default .navbar-nav > .open > a:focus {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #1d1d1d;
+}
+
+.dropdown:hover {
+	color:#1d1d1d;
+	text-decoration: none;
+}
+
+.dropdown:focus {
+	background-color:transparent;
+}
+
+.dropdown-menu {
+	top:80px;
+	border:none;
+	background-color: transparent;
+	color: #008cbd;
+}
+
+.dropdown-menu li a {
+	line-height: 20px;
+}
+
+.dropdown-menu li a:hover {
+	color:#008cbd;
+	background-color: transparent;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: century gothic;
+	letter-spacing: 3spx;
+}
+
+header .text-left p {
+	color:#fff;
+	font-family: century gothic;
+	font-size: 20px;
+
+}
+
+header .text-left p:first-line {
+	font-size: 25px;
+}
+
+.button {
+	position: relative;
+	background-color: transparent;
+	width: 200px;
+	height: 50px;
+	margin:100px auto 50px;
+	border:3px solid #ff7f00;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 40px;
+	overflow: hidden;
+
+}
+
+.button:before {
+	content:'';
+	display: inline-block;
+	visibility: hidden;
+	background-image: url(../img/bg_before.png);
+	background-size: cover;
+	width: 100px;
+	height: 48px;
+	position: absolute;
+	top:-2px;
+	left:-100px;
+	opacity: 0;
+}
+
+.button:after {
+	content:'';
+	display: inline-block;
+	visibility: hidden;
+	background-image: url(../img/bg_after.png);
+	background-size: cover;
+	width: 100px;
+	height: 48px;
+	position: absolute;
+	top:-2px;
+	left:195px;
+	opacity: 0;
+}
+
+.button:hover:before{
+	left:0;
+	z-index: 0;
+	transition: all 0.5s ease;
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.button:hover:after{
+	left:95px;
+	z-index: 0;
+	transition: all 0.5s ease;
+	visibility: visible;
+	opacity: 1;
+}
+
+.button p {
+	color:#ff7f00;
+	text-transform:uppercase;
+	font-size: 12px;
+	z-index: 1;
+}
+
+.orderTextTwo {
+	display: none;
+	visibility: hidden;
+
+}
+
+.button:hover .orderTextTwo {
+	display: inline-block;
+	visibility: visible;
+	color:#fff;
+	transition: all 0.3s ease;
+	z-index: 2;
+	position: absolute;
+	top:2px;
+	left:17px;
+	font-size: 15px;
+}
+
+.button:hover .orderTextOne {
+	display: none;
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+	.dropdown {
+		display: block;!important
+		visibility: visible;!important
+	}
+}
