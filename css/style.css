@@ -48,12 +48,14 @@ video{
 .dropdown-menu {
 	top:80px;
 	border:none;
-	background-color: transparent;
+	background-color: #fff;
 	color: #008cbd;
+	box-shadow: none;
+	font-size: 1em;
 }
 
 .dropdown-menu li a {
-	line-height: 20px;
+	line-height: 30px;
 }
 
 .dropdown-menu li a:hover {
@@ -61,8 +63,17 @@ video{
 	background-color: transparent;
 }
 
-h1 {
+header h1 {
 	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: century gothic;
+	letter-spacing: 3spx;
+}
+
+header h2 {
+	font-size: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #fff;
