@@ -11,53 +11,45 @@ video{
    min-width:100%;
    overflow:hidden;
 }
-.navbar-default {
-	background-color: transparent;
-	font-family: century gothic;
-	font-size: 20px;
-	border: none;
-}
 
-.navbar-default .navbar-nav > li > a {
-	margin: 30px 10px;
-}
-
-
-.navbar-default .navbar-nav > li > a:hover{
-	color: #008cbd;
-	text-decoration:underline dotted #008cbd;
-}
-
-.navbar-default .navbar-nav > .open > a:focus {
-	background-color: transparent;
-}
-
-.navbar-default .navbar-nav > li > a {
-	color: #1d1d1d;
-}
-
-.dropdown:hover {
-	color:#1d1d1d;
-	text-decoration: none;
-}
-
-.dropdown:focus {
-	background-color:transparent;
-}
-
-.dropdown-menu {
-	top:80px;
+.navbar {
+	background: transparent;
 	border:none;
-	background-color: transparent;
-	color: #008cbd;
 }
 
-.dropdown-menu li a {
-	line-height: 20px;
+.nav > li:hover a {
+	background-color: transparent;	
 }
 
-.dropdown-menu li a:hover {
-	color:#008cbd;
+.nav > li > a {
+	color:#aaa;
+	transition:all 0.5s ease;
+	text-decoration: none;
+	font-size: 25px;
+	display: inline-block;
+	margin: 0px 10px;
+	border:none;
+}
+
+.navbar-right > li > a:hover {
+	text-decoration: dotted underline #1897c2;
+}
+
+.navbar-collapse>.nav>li>a:hover {
+	color:#1B97C2; !important
+}
+
+.navbar-header {
+	float:left;
+}
+
+.navbar-toggle {
+	margin-left: 20px;
+	border:none;
+	color:#aaa;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	background-color: transparent;
 }
 
@@ -102,11 +94,12 @@ header .text-left p:first-line {
 	background-image: url(../img/bg_before.png);
 	background-size: cover;
 	width: 100px;
-	height: 48px;
+	height: 100px;
 	position: absolute;
-	top:-2px;
+	top:-27px;
 	left:-100px;
 	opacity: 0;
+	transform: rotateZ(60deg);
 }
 
 .button:after {
@@ -116,28 +109,31 @@ header .text-left p:first-line {
 	background-image: url(../img/bg_after.png);
 	background-size: cover;
 	width: 100px;
-	height: 48px;
+	height: 100px;
 	position: absolute;
-	top:-2px;
+	top:-27px;
 	left:195px;
 	opacity: 0;
+	transform: rotateZ(60deg);
 }
 
 .button:hover:before{
 	left:0;
 	z-index: 0;
-	transition: all 0.5s ease;
+	transition: all 0.5s ease-out;
 	visibility: visible;
 	opacity: 1;
+	transform: rotateZ(0deg);
 }
 
 
 .button:hover:after{
 	left:95px;
 	z-index: 0;
-	transition: all 0.5s ease;
+	transition: all 0.5s ease-out;
 	visibility: visible;
 	opacity: 1;
+	transform: rotateZ(0deg);
 }
 
 .button p {
@@ -181,9 +177,9 @@ header .text-left p:first-line {
 
 
 
-@media screen and (max-width: 767px) {
-	.dropdown {
-		display: block;!important
-		visibility: visible;!important
+@media screen only and (max-width: 767px) {
+	.navbar-nav > li > a {
+		margin: 0;
+		padding: 0;
 	}
 }
