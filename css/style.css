@@ -46,15 +46,35 @@ video{
 .navbar-toggle {
 	margin-left: 20px;
 	border:none;
+<<<<<<< HEAD
 	color:#aaa;
+=======
+	background-color: #fff;
+	color: #008cbd;
+	box-shadow: none;
+	font-size: 1em;
+}
+
+.dropdown-menu li a {
+	line-height: 30px;
+>>>>>>> ddcf3214764db79d00509e4f1fec5014cba523e0
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	background-color: transparent;
 }
 
-h1 {
+header h1 {
 	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: century gothic;
+	letter-spacing: 3spx;
+}
+
+header h2 {
+	font-size: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #fff;
