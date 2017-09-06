@@ -46,9 +46,7 @@ video{
 .navbar-toggle {
 	margin-left: 20px;
 	border:none;
-<<<<<<< HEAD
 	color:#aaa;
-=======
 	background-color: #fff;
 	color: #008cbd;
 	box-shadow: none;
@@ -57,7 +55,6 @@ video{
 
 .dropdown-menu li a {
 	line-height: 30px;
->>>>>>> ddcf3214764db79d00509e4f1fec5014cba523e0
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
