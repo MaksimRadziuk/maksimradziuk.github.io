@@ -17,6 +17,7 @@ body {
 	font-family: century gothic, sans-serif;
 }
 
+
 video{
    position:fixed;
    z-index:-1;
@@ -188,13 +189,7 @@ header .text-left p:first-line {
 
 
 
-
-
-
-
-
-/* Small devices (tablets, 768px and up) */
-@media (max-width:992px) { 
+@media screeen only and (max-width:992px) { 
 	.navbar-nav > li > a {
 		margin: 0;
 		padding: 0;
@@ -202,11 +197,20 @@ header .text-left p:first-line {
 	.navbar-nav {
 	margin-left: 0;
 	}
-
+	
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
+@media screeen only and (max-width:768px) {
+	video {
+		display: none;
+	}
+	header {
+		background:url(img/bcg_header.png);
+	}
+}
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
+@media screeen only and (max-width:320px) {
+	
+}
+
+
